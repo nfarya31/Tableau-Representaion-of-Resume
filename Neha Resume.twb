@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build Public-Release.18.0829.1637                      -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0816.1427)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location derived-from='https://public.tableau.com/workbooks/Timeline_31?rev=1.9' id='Timeline_31' path='/workbooks' revision='2.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Education_Employment) (2)' inline='true' name='federated.0phyypz1rnydrb1b531qz0d9cywn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Education_Employment' name='excel-direct.0l021b40f45srh15azktx1imux0m'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Neha Farya/Desktop/Notes on Various Topics/Education_Employment.xlsx' interpretationMode='0' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0l021b40f45srh15azktx1imux0m' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:F11:no:A1:F11:0' header='yes' lost='0' outcome='2' processed='30'>
+            <column datatype='string' name='Names' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Category' ordinal='2' />
+            <column datatype='date' name='Start Date' ordinal='3' />
+            <column datatype='integer' name='Number of Days' ordinal='4' />
+            <column datatype='string' name='Description' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Names</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Names]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Names</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Start Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Start Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Days]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Number of Days</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>11</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F11:no:A1:F11:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_1w50uxr0pov4lf17jx8tt1we6it2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/18/2018 06:24:16 AM' updated-database='C:/Users/NEHAFA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0nfmm9l17i4sjy1bkuwj21fhrejg.hyper' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Names</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Start Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Start Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Start Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Days</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.430876' measure-ordering='alphabetic' measure-percentage='0.285714' parameter-percentage='0.28341' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Sheet1 (Education_Employment)' inline='true' name='federated.0gfogkn1r8fak114ixa3t0hocx6k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Education_Employment' name='excel-direct.06q3sm10fqve6j1av9kid0zcp0sq'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Neha Farya/Desktop/Notes on Various Topics/Education_Employment.xlsx' interpretationMode='1' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Sheet1].[Names]' />
+              <expression op='[Sheet2].[Area of Expertise]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.06q3sm10fqve6j1av9kid0zcp0sq' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:F11:no:A1:F11:1' header='yes' lost='0' outcome='1' processed='20'>
+              <column datatype='string' name='Names' ordinal='0' />
+              <column datatype='string' name='Title' ordinal='1' />
+              <column datatype='string' name='Category' ordinal='2' />
+              <column datatype='date' name='Start Date' ordinal='3' />
+              <column datatype='integer' name='Number of Days' ordinal='4' />
+              <column datatype='string' name='Description' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.06q3sm10fqve6j1av9kid0zcp0sq' name='Sheet2' table='[Sheet2$]' type='table'>
+            <columns gridOrigin='A1:C8:no:A1:C8:1' lost='0' outcome='1' processed='7'>
+              <column datatype='string' name='Area of Expertise' ordinal='0' />
+              <column datatype='string' name='Proficiency Level' ordinal='1' />
+              <column datatype='integer' name='Percentage Exposure' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Names</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Names]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Names</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Start Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Start Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Days]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Number of Days</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F11:no:A1:F11:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>20</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area of Expertise</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Area of Expertise]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Area of Expertise</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Proficiency Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Proficiency Level]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Proficiency Level</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage Exposure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Percentage Exposure]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Percentage Exposure</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C8:no:A1:C8:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>7</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='EndDate' datatype='date' datatype-customized='true' name='[Calculation_192810402095427591]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATEADD(&quot;day&quot;,[Number of Days],[Start Date]))' />
+      </column>
+      <column caption='Name' datatype='string' name='[Names]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Dates' datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+      <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+      <folder name='Folder 1' role='dimensions'>
+        <folder-item name='[Calculation_192810402095427591]' type='field' />
+        <folder-item name='[Start Date]' type='field' />
+      </folder>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_1f8g6xi0r752al1dokda20xwnjim.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/18/2018 07:36:05 AM' updated-database='C:/Users/NEHAFA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1179beu0lv38dv1amv3bb1kf9hbf.hyper' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Names</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Start Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Start Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Start Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Days</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area of Expertise</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area of Expertise]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area of Expertise</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Proficiency Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Proficiency Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Proficiency Level</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage Exposure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Percentage Exposure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage Exposure</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.668113' measure-ordering='alphabetic' measure-percentage='0.331887' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Title:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Accounting - Pre Requisites for Masters degree&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Finance -Pre Requistes for Masters degree&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Cultural Head&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Student Manager&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Masters of Science degree in Management Information Systems&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Volunteer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Business Intelligence Reporting Intern&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;IT Application Consultant:Associate&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bachelors in Computer Science Engineering&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Student Assistant&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Sheet 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' underline='true'>Timeline </run>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='10' underline='true'>(hover around for details)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Timeline_31/Sheet1?rev=' id='Sheet1' path='/workbooks/Timeline_31' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Education_Employment)' name='federated.0gfogkn1r8fak114ixa3t0hocx6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gfogkn1r8fak114ixa3t0hocx6k'>
+            <column caption='EndDate' datatype='date' datatype-customized='true' name='[Calculation_192810402095427591]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEADD(&quot;day&quot;,[Number of Days],[Start Date]))' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Description]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[Names]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Days]' role='measure' type='quantitative' />
+            <column caption='Dates' datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_192810402095427591]' derivation='None' name='[none:Calculation_192810402095427591:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Description]' derivation='None' name='[none:Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Names]' derivation='None' name='[none:Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Start Date]' derivation='None' name='[none:Start Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Days]' derivation='Sum' name='[sum:Number of Days:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Date]' derivation='Year-Trunc' name='[tyr:Start Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]'>
+            <groupfilter from='&quot;Education&quot;' function='range' level='[none:Category:nk]' to='&quot;Volunteer&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[tyr:Start Date:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]' value='372' />
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]' value='0' />
+            <format attr='text-align' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]' value='left' />
+            <format attr='font-size' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]' value='10' />
+            <format attr='color' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]' value='#4e79a7' />
+            <format attr='font-weight' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]' value='bold' />
+            <format attr='font-family' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]' value='Tahoma' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]' />
+              <size column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Number of Days:qk]' />
+              <lod column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Description:nk]' />
+              <lod column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Title:nk]' />
+              <text column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Start Date:qk]' />
+              <text column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Calculation_192810402095427591:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#f28e2b'>&lt;[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Title:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'>&lt;[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>&lt;[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Start Date:qk]&gt; to &lt;[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Calculation_192810402095427591:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true' fontcolor='#4e79a7' italic='true'>&lt;[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Description:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000'>Number of Days</run>
+                <run fontcolor='#787878'>:</run>
+                <run bold='true'>&lt;[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Number of Days:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='504' />
+                <format attr='maxwidth' value='504' />
+                <format attr='minheight' value='200' />
+                <format attr='maxheight' value='200' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]</rows>
+        <cols>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[tyr:Start Date:qk]</cols>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='12' underline='true'>Area of Expertise </run>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='9' underline='true'>(hover around for details)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Timeline_31/Sheet2?rev=' id='Sheet2' path='/workbooks/Timeline_31' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Education_Employment)' name='federated.0gfogkn1r8fak114ixa3t0hocx6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gfogkn1r8fak114ixa3t0hocx6k'>
+            <column datatype='string' name='[Area of Expertise]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Percentage Exposure]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Proficiency Level]' role='dimension' type='nominal' />
+            <column-instance column='[Area of Expertise]' derivation='None' name='[none:Area of Expertise:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Proficiency Level]' derivation='None' name='[none:Proficiency Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Percentage Exposure]' derivation='Sum' name='[sum:Percentage Exposure:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]' value='center' />
+            <format attr='color' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]' value='#ffffff' />
+            <format attr='font-size' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]' value='14' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Percentage Exposure:qk]' num-steps='5' palette='tableau-map-temperatur' reverse='true' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Percentage Exposure:qk]' />
+              <color column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Percentage Exposure:qk]' />
+              <text column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]' />
+              <text column='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Area of Expertise:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Area of Expertise:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Timeline_31/Dashboard1?rev=' id='Dashboard1' path='/workbooks/Timeline_31' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='66171' id='1' name='Sheet 1' w='77442' x='533' y='31041' />
+        <zone h='8736' id='3' name='Sheet 1' pane-specification-id='0' param='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]' type='color' w='33962' x='1887' y='84387' />
+        <zone h='28625' id='4' is-centered='0' is-scaled='1' param='Image/18-LinkedIn-Booth-020-SW-021_612x918.jpg' type='bitmap' w='9325' x='533' y='2230' />
+        <zone h='18216' id='5' type='text' w='50710' x='9680' y='2416'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#002060' fontname='Benton Sans Book' fontsize='14'>NEHA FARYA</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Æ </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Expertise in BI Reporting|Data Modeling|Project Management Scheduling</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>nfarya@gmail.com | 815-981-1004 |NJ|www.linkedin.com/in/nehafarya </run>
+          </formatted-text>
+        </zone>
+        <zone h='11524' id='6' is-centered='0' is-scaled='1' param='Image/DXC technology.png' type='bitmap' url='http://www.dxc.technology/' w='4796' x='63499' y='929' />
+        <zone h='5576' id='7' type='text' w='28153' x='68917' y='2045'>
+          <formatted-text>
+            <run fontcolor='#000000'>IT Application Consultant at CSC (Now DXC Technology)</run>
+          </formatted-text>
+        </zone>
+        <zone h='11710' id='8' is-centered='0' is-scaled='1' param='Image/Ortho.jpg' type='bitmap' url='https://www.orthomolecularproducts.com/' w='5684' x='63144' y='11338' />
+        <zone forceUpdate='true' h='5576' id='9' type='text' w='10213' x='69449' y='12639'>
+          <formatted-text>
+            <run fontcolor='#000000'>BI Reporting Intern</run>
+          </formatted-text>
+        </zone>
+        <zone h='9851' id='10' is-centered='0' is-scaled='1' param='Image/linkedin.png' type='bitmap' url='https://www.linkedin.com/in/nehafarya' w='3908' x='10746' y='19517' />
+        <zone h='11152' id='11' is-centered='0' is-scaled='1' param='Image/niu.png' type='bitmap' url='https://www.niu.edu/index.shtml' w='12078' x='28508' y='18216' />
+        <zone h='5576' id='12' type='text' w='8881' x='18828' y='19703'>
+          <formatted-text>
+            <run fontcolor='#000000'>Alma Mater</run>
+          </formatted-text>
+        </zone>
+        <zone h='10967' id='13' is-centered='0' is-scaled='1' param='Image/VTU.jpg' type='bitmap' url='http://vtu.ac.in/' w='5329' x='43606' y='18030' />
+        <zone h='55204' id='14' name='Sheet 2' w='21670' x='77709' y='23234' />
+        <zone h='14684' id='15' name='Sheet 2' pane-specification-id='0' param='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Percentage Exposure:qk]' type='color' w='12433' x='84281' y='82528' />
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card param='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]' type='filter' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='0' param='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Category:nk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:End Date:qk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Names:nk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Start Date:ok]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Start Date:qk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Calculation_192810402075623429:qk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[tyr:End Date:qk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[yr:End Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Percentage Exposure:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Percentage Exposure:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Area of Expertise:nk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[none:Proficiency Level:nk]</field>
+            <field>[federated.0gfogkn1r8fak114ixa3t0hocx6k].[sum:Percentage Exposure:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true'>
+        <device is-portrait='false' name='Generic Desktop Monitor' type='Desktop' />
+      </device-preview>
+    </window>
+  </windows>
+</workbook>
